@@ -1,24 +1,40 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import Header from "../src/components/Header";
+import About from "../src/components/About";
+import Contact from "../src/components/Contact";
+import Portfolio from "../src/components/Portfolio";
+import Resume from "../src/components/Resume";
+import Footer from "../src/components/Footer";
+import "./App.css";
 
 function App() {
+  const [currentTab, setCurrentTab] = useState("about");
+
+  const renderTab = () => {
+    switch (currentTab) {
+      case "about":
+        return <About />;
+      case "portfolio":
+        return <Portfolio />;
+      case "contact":
+        return <Contact />;
+      case "resume":
+        return <Resume />;
+      default:
+        return <About />;
+    }
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <div className="mobile-header">
+        <Header currentTab={currentTab} setCurrentTab={setCurrentTab}></Header>
+      </div>
+      <div>
+        <main>{renderTab()}</main>
+        <Footer></Footer>
+      </div>
+    </>
   );
 }
 
