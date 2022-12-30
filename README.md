@@ -34,12 +34,12 @@ Yes - Application must use React to render content.
 Yes - Application has a single Header component that appears on multiple pages, with a Navigation component within it that’s used to conditionally render About Me, Portfolio, Contact, and Resume sections.
 Yes - Application has a single Project component that’s used multiple times in the Portfolio section.
 Yes - Application has a single Footer component that appears on multiple pages.
-It's deployed with errors so technically yes - Application must be deployed to GitHub Pages.
+It's deployed with errors but technically yes - Application must be deployed to GitHub Pages.
 
 Deployment: 32%
-Yes - Application deployed at live URL.
+Maybe if you are generous - Application deployed at live URL.
 No - Application loads with no errors.
-Yes - Application GitHub URL submitted.
+Yes? - Application GitHub URL submitted.
 Yes - GitHub repository contains application code.
 
 Application Quality: 15%
