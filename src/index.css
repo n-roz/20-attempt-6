@@ -11,6 +11,11 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+footer {
+position: sticky;
+}
+
 /* 
 header {
   background-image: url('./assets/1920x950image1.png');
