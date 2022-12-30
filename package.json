@@ -1,7 +1,7 @@
 {
   "name": "attempt-6-on-20",
   "version": "0.1.0",
-  "homepage": "http://n-roz.github.io/20-attempt-6",
+  "homepage": "http://n-roz.github.io/attempt-6-on-20",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
